@@ -53,12 +53,6 @@ nav ul li {
   margin-right: 20px;
 }
 
-a {
-  text-decoration: none;
-  color: #000000;
-  font-size: 22px;
-  font-weight: 600;
-}
 
 .button {
   text-align: center;
@@ -68,6 +62,19 @@ a {
   cursor: pointer;
   border-radius: 5px;
   padding: 10px;
+}
+
+/***Global Styles***/
+a {
+  text-decoration: none;
+  color: #000000;
+  font-size: 22px;
+  font-weight: 600;
+}
+
+h2 {
+  font-family: 'Poppins';
+  color: #000000;
 }
 
 /*** Animations ***/

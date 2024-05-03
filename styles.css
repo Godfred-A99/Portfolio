@@ -17,18 +17,18 @@ body {
 }
 
 .screen {
-  width: 80vw;
+  width: 70vw;
   height: 100vh;
   background-color: #ffffff;
   color: #fff;
-  padding: 30px 60px;
 }
 
 nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #ffffff;
+  padding: 30px 40px;
+  background-color: #b4aaaa;
   color: #000000;
 }
 
@@ -53,7 +53,6 @@ nav ul li {
   margin-right: 20px;
 }
 
-
 .button {
   text-align: center;
   border: 1px solid #538325;
@@ -64,6 +63,65 @@ nav ul li {
   padding: 10px;
 }
 
+#hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 40px 40px;
+  border: 1px solid #000;
+}
+
+#hero .hero-content {
+  width: 50%;
+  margin: 10px 0;
+}
+
+#hero .hero-content h3 {
+  font-size: 30px;
+  font-weight: 600px;
+  margin-left: 40px;
+}
+
+#hero .hero-content h2 {
+  font-family: "Pacifico";
+  font-size: 40px;
+  font-weight: 700;
+  margin-left: 40px;
+}
+
+#hero .hero-content .links {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin: 20px 40px;
+}
+
+#hero .hero-content .links a {
+  text-align: center;
+  padding: 10px 20px;
+  border-radius: 5px;
+  color: #fff;
+  background-color: #000;
+  margin: 0 10px;
+}
+
+#hero .hero-pic {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  margin: 10px 0;
+  background-image: url(/assets/blob-haikei.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-size: 600px;
+  position: relative;
+}
+
+#hero .hero-pic .profile {
+}
+
 /***Global Styles***/
 a {
   text-decoration: none;
@@ -72,11 +130,18 @@ a {
   font-weight: 600;
 }
 
-h2 {
-  font-family: 'Poppins';
+h2,
+h3 {
+  font-family: "Poppins";
   color: #000000;
+  font-weight: 600;
+  padding: 2px 0;
 }
 
 /*** Animations ***/
+#hero .hero-content .links a:hover {
+  background-color: #538325;
+  color: #fff;
+}
 
 /*** Responsive  ***/

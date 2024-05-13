@@ -1,147 +1,64 @@
-@import url("https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-
 * {
-  box-sizing: border-box;
-  padding: 0;
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-  font-family: sans-serif "Poppins";
   width: 100vw;
   height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #fafafa;
-}
-
-.screen {
-  width: 70vw;
-  height: 100vh;
-  background-color: #ffffff;
-  color: #fff;
+  background: #fff;
 }
 
 nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 30px 40px;
-  background-color: #b4aaaa;
-  color: #000000;
+  padding: 3rem;
 }
-
 nav h1 {
-  font-family: "Pacifico";
-  font-size: 40px;
-  font-weight: 700;
-  cursor: pointer;
+  font-size: 3rem;
+  font-weight: 600;
+  color: #000;
 }
 
 nav h1 span {
-  font-size: 30px;
-  font-weight: 600;
+  color: #0050ff;
 }
 
 nav ul {
-  list-style: none;
   display: flex;
+  gap: 2rem;
+  list-style: none;
 }
 
 nav ul li {
-  margin-right: 20px;
-}
-
-.button {
-  text-align: center;
-  border: 1px solid #538325;
-  font-size: 18px;
+  font-size: 1.5rem;
   font-weight: 600;
-  cursor: pointer;
-  border-radius: 5px;
-  padding: 10px;
 }
 
-#hero {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-  padding: 40px 40px;
-  border: 1px solid #000;
-}
-
-#hero .hero-content {
-  width: 50%;
-  margin: 10px 0;
-}
-
-#hero .hero-content h3 {
-  font-size: 30px;
-  font-weight: 600px;
-  margin-left: 40px;
-}
-
-#hero .hero-content h2 {
-  font-family: "Pacifico";
-  font-size: 40px;
-  font-weight: 700;
-  margin-left: 40px;
-}
-
-#hero .hero-content .links {
-  display: flex;
-  gap: 10px;
-  align-items: center;
-  margin: 20px 40px;
-}
-
-#hero .hero-content .links a {
-  text-align: center;
-  padding: 10px 20px;
-  border-radius: 5px;
-  color: #fff;
-  background-color: #000;
-  margin: 0 10px;
-}
-
-#hero .hero-pic {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 50%;
-  margin: 10px 0;
-  background-image: url(/assets/blob-haikei.svg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-size: 600px;
-  position: relative;
-}
-
-#hero .hero-pic .profile {
-}
-
-/***Global Styles***/
-a {
+nav ul li a {
   text-decoration: none;
-  color: #000000;
-  font-size: 22px;
-  font-weight: 600;
+  color: #000;
 }
 
-h2,
-h3 {
-  font-family: "Poppins";
-  color: #000000;
-  font-weight: 600;
-  padding: 2px 0;
-}
-
-/*** Animations ***/
-#hero .hero-content .links a:hover {
-  background-color: #538325;
+nav button {
+  font: 1em;
+  text-align: center;
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  background: #0050ff;
   color: #fff;
 }
 
-/*** Responsive  ***/
+/*hover state*/
+nav ul li a:hover {
+  color: #0050ff;
+}
+
+nav button:hover {
+  background: #fff;
+  color: #0050ff;
+  box-shadow: 1px 1px 5px #0050ff;
+}

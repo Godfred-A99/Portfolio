@@ -10,6 +10,8 @@ body {
   background: #fff;
 }
 
+/**navBar**/
+
 nav {
   display: flex;
   justify-content: space-between;
@@ -37,11 +39,6 @@ nav ul li {
   font-weight: 600;
 }
 
-nav ul li a {
-  text-decoration: none;
-  color: #000;
-}
-
 nav button {
   font: 1em;
   text-align: center;
@@ -50,9 +47,16 @@ nav button {
   border: none;
   background: #0050ff;
   color: #fff;
+  cursor: pointer;
 }
 
-/*hover state*/
+/**Global State**/
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+/**hover state**/
 nav ul li a:hover {
   color: #0050ff;
 }
@@ -61,4 +65,24 @@ nav button:hover {
   background: #fff;
   color: #0050ff;
   box-shadow: 1px 1px 5px #0050ff;
+}
+
+/**content**/
+.container {
+  display: flex;
+  position: relative;
+}
+.left {
+  width: 40%;
+  height: 100vh;
+  background: #e6dace;
+}
+
+.right {
+  width: 60%;
+  height: 100vh;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

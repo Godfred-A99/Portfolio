@@ -70,12 +70,43 @@ nav button:hover {
 /**content**/
 .container {
   display: flex;
-  position: relative;
 }
+
 .left {
+  position: relative;
   width: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 100vh;
   background: #e6dace;
+}
+
+.left img {
+  width: 300px;
+  border-radius: 50%;
+}
+
+.left .left-content {
+  width: 500px;
+  height: 700px;
+  /* display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; */
+  position: absolute;
+  background: #f4ece6;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.left .left-content .content-profile {
+  width: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
 }
 
 .right {

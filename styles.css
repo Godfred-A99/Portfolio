@@ -51,6 +51,10 @@ nav button {
   cursor: pointer;
 }
 
+a.active {
+  color: #0050ff;
+}
+
 /**Global State**/
 a {
   text-decoration: none;
@@ -72,12 +76,14 @@ nav button:hover {
   background: #fff;
   color: #000;
   border: 2px solid #0050ff;
+  cursor: pointer;
 }
 
 .right .right-content .button-container button:hover {
   background: #0050ff;
   color: #fff;
   border: none;
+  cursor: pointer;
 }
 
 /**content**/
@@ -209,13 +215,7 @@ nav button:hover {
 /** Projects**/
 #PROJECTS {
   background: #e6dace;
-}
-
-#PROJECTS h1 {
   text-align: center;
-  padding: 60px 0;
-  font-size: 3rem;
-  font-weight: 600;
 }
 
 /**footer**/

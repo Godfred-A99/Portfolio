@@ -1,2 +1,3 @@
 # Portfolio
-A portfolio made with html and css only 
+
+A portfolio made with html, css and javascript

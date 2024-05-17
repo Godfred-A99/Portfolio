@@ -215,7 +215,48 @@ nav button:hover {
 /** Projects**/
 #PROJECTS {
   background: #e6dace;
+  width: 100%;
+  padding: 10px;
+}
+
+#PROJECTS h1 {
   text-align: center;
+  padding: 20px 0;
+  font-size: 3rem;
+  font-weight: 600;
+}
+
+#PROJECTS p {
+  text-align: center;
+  font-size: 1.3em;
+}
+
+#PROJECTS .project {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  justify-content: center;
+  gap: 50px;
+  padding: 40px 0;
+}
+
+#PROJECTS .project .pro {
+  width: 500px;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background: #f4ece6;
+  border-radius: 10px;
+  box-shadow: 2px 2px 5px #757474;
+}
+
+#PROJECTS .project .pro .links {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
 }
 
 /**footer**/
@@ -224,3 +265,8 @@ nav button:hover {
   width: 100%;
   height: 90px;
 }
+
+@media (min-width: 675px) {
+
+}
+

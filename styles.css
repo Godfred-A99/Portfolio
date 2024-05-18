@@ -86,6 +86,16 @@ nav button:hover {
   cursor: pointer;
 }
 
+#PROJECTS .project .pro:hover {
+  box-shadow: 2px 2px 5px #757474;
+  transition: 4ms ease;
+}
+
+#PROJECTS .project .pro .links a:hover {
+  color: #0050ff;
+  transition: 4ms ease;
+}
+
 /**content**/
 .container {
   display: flex;
@@ -241,14 +251,14 @@ nav button:hover {
 
 #PROJECTS .project .pro {
   width: 500px;
-  height: 400px;
+  height: 500px;
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 20px;
   background: #f4ece6;
+  border: none;
   border-radius: 10px;
-  box-shadow: 2px 2px 5px #757474;
 }
 
 #PROJECTS .project .pro .links {
@@ -256,9 +266,21 @@ nav button:hover {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  gap: 5px;
+  gap: 1rem;
 }
 
+#PROJECTS .project img {
+  width: 500px;
+  height: 400px;
+  padding: 10px;
+}
+
+#PROJECTS .project .pro .links a {
+  color: #000;
+  padding: 5px;
+  border-radius: 5px;
+  box-shadow: 1px 1px 5px #757474;
+}
 /**footer**/
 .footer {
   background: #fff;
@@ -266,7 +288,9 @@ nav button:hover {
   height: 90px;
 }
 
-@media (min-width: 675px) {
-
+@media (max-width: 750px) {
+  #PROJECTS .project {
+    display: grid;
+    grid-template-columns: auto;
+  }
 }
-

@@ -281,6 +281,14 @@ nav button:hover {
   border-radius: 5px;
   box-shadow: 1px 1px 5px #757474;
 }
+
+.contact-cont {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #ffffff;
+}
 /**footer**/
 .footer {
   background: #fff;
